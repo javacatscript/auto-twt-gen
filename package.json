@@ -1,0 +1,23 @@
+{
+  "name": "auto-tweet-generator",
+  "version": "1.0.0",
+  "description": "Automated daily tweet generator that posts to Twitter at 11:00 AM IST",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "keywords": [
+    "twitter",
+    "automation",
+    "scheduler",
+    "cron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "twitter-api-v2": "^1.17.2",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  }
+}
