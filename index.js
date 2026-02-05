@@ -54,7 +54,7 @@ function selectRandomTopic() {
  */
 async function generateTweet(topic) {
     try {
-        const prompt = `Generate a single tweet about "${topic}" that feels written by a real human, not a bot.
+         const prompt = `Generate a single tweet about "${topic}" that feels written by a real human, not a bot. Make it a banger: super funny, hilarious, sarcastic, or witty, tying into the latest trends or viral moments for extra punch.
 
         Tone & style:
         - Witty, clever, and sometimes lightly sarcastic
@@ -64,12 +64,14 @@ async function generateTweet(topic) {
 
         Rules:
         - Maximum 280 characters
+        - **CRITICAL:** Vary the length significantly. mostly give me short punchy tweets (60-90 chars), sometimes medium (100-150 chars), and rarely longer ones (200 chars).
         - No quotation marks
         - Do not use em dashes
         - Do not use ellipsis
         - Avoid generic motivational or marketing tone
-        - Avoid hashtags unless they genuinely add humor or emphasis
-        - Use natural phrasing, subtle humor, or a surprising angle
+        - Avoid hashtags
+        - **CRITICAL:** Use natural phrasing, subtle humor, or a surprising angle
+        - **CRITICAL:** Incorporate current trends, memes, or pop culture refs naturally to make it timely and fresh
 
         Return only the tweet text, nothing else.`;
 
