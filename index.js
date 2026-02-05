@@ -73,7 +73,7 @@ async function generateTweet(topic) {
         - **CRITICAL:** Use natural phrasing, subtle humor, or a surprising angle
         - **CRITICAL:** Incorporate current trends, memes, or pop culture refs naturally to make it timely and fresh
 
-        Return only the tweet text, nothing else.`;
+        Return only the tweet text, nothing else.`; 
 
         const result = await model.generateContent(prompt);
         const response = await result.response;
