@@ -68,8 +68,8 @@ async function runTest() {
 
     console.log('----------------------------------------');
 
-    // Generate 5 samples
-    for (let i = 1; i <= 5; i++) {
+    // Generate 1 sample
+    for (let i = 1; i <= 1; i++) {
         const topic = selectRandomTopic();
         process.stdout.write(`Generating sample ${i}/5 (Topic: ${topic})... `);
 
